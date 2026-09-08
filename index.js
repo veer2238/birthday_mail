@@ -149,15 +149,15 @@ app.get("/birthday-email-student", async (req, res) => {
 
         const transporter = nodemailer.createTransport({
 
-            host: process.env.SMTP_HOST,
+            host: "smtp.hostinger.com",
 
-            port: Number(process.env.SMTP_PORT),
+            port: 465,
 
             secure: true,
 
             auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS,
+                user: 'info@v-extechsolution.in',
+                pass: 'Hima@0409',
             },
 
         });
@@ -294,7 +294,7 @@ app.get("/birthday-email-student", async (req, res) => {
 
             const mailOptions = {
 
-                from: process.env.EMAIL_USER,
+                from: 'info@v-extechsolution.in',
 
                 to: student.email,
 
@@ -372,11 +372,11 @@ app.get("/birthday-email-student", async (req, res) => {
 // -------------------------
 
 app.listen(
-    process.env.PORT,
+   8087,
     () => {
 
         console.log(
-            `Server is running on port ${process.env.PORT}`
+            `Server is running on port 8087`
         );
 
     }
