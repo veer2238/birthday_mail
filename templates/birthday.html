@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Happy Birthday</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    line-height: 1.6;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 15px 5px;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+    padding: 35px 25px 30px;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 22px;
+}
+
+.birthday-icon {
+    font-size: 46px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #777777;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    padding: 40px 35px;
+}
+
+.greeting {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.greeting h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.greeting p {
+    font-size: 14px;
+    color: #777777;
+}
+
+.content p {
+    font-size: 15px;
+    color: #444444;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+.content strong {
+    color: #111111;
+}
+
+
+/* =========================
+   MAIN BIRTHDAY MESSAGE
+========================= */
+
+.birthday-box {
+    text-align: center;
+    margin: 32px 0;
+    padding: 30px 20px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    background: #ffffff;
+}
+
+.birthday-box .icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.birthday-box h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 12px;
+}
+
+.birthday-box p {
+    max-width: 520px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   WISHES
+========================= */
+
+.wishes-box {
+    margin: 30px 0;
+    padding: 25px 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.wishes-box h3 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.wishes-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wishes-box tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.wishes-box tr:last-child {
+    border-bottom: none;
+}
+
+.wishes-box td {
+    padding: 11px 5px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.wishes-box td:first-child {
+    width: 35px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote {
+    text-align: center;
+    margin: 32px 0;
+    padding: 20px 10px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.quote p {
+    margin: 0;
+    font-size: 15px;
+    font-style: italic;
+    color: #555555;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #111111;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   REGARDS
+========================= */
+
+.regards-section {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.regards-section p {
+    margin-bottom: 5px;
+}
+
+.team-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111111;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 28px 20px;
+    background: #ffffff;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #777777;
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 18px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 8px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media only screen and (max-width: 600px) {
+
+    .wrapper {
+        padding: 5px;
+    }
+
+    .container {
+        border-radius: 8px;
+    }
+
+    .header {
+        padding: 30px 18px 25px;
+    }
+
+    .header img {
+        width: 105px;
+    }
+
+    .birthday-icon {
+        font-size: 40px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    .greeting h2 {
+        font-size: 21px;
+    }
+
+    .birthday-box {
+        padding: 25px 15px;
+    }
+
+    .wishes-box {
+        padding: 20px 12px;
+    }
+
+    .wishes-box td {
+        padding: 9px 3px;
+    }
+
+    .social-links a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .btn {
+        padding: 12px 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<div class="header">
+
+    <img
+        src="https://v-extechsolution.in/static/media/logo.b48612c02e688a28a62f.png"
+        alt="V-Ex Tech Solutions Logo"
+    >
+
+    <div class="birthday-icon">
+        🎂
+    </div>
+
+    <h1>
+        Happy Birthday!
+    </h1>
+
+    <p>
+        A special wish from everyone at V-Ex Tech Solutions
+    </p>
+
+</div>
+
+
+<!-- =========================
+     CONTENT
+========================= -->
+
+<div class="content">
+
+
+<div class="greeting">
+
+    <h2>
+        Dear {{name}},
+    </h2>
+
+    <p>
+        Today is your special day.
+    </p>
+
+</div>
+
+
+<p>
+    Everyone at
+    <strong>V-Ex Tech Solutions</strong>
+    would like to wish you a very
+    <strong>Happy Birthday!</strong>
+</p>
+
+
+<p>
+    We hope your day is filled with happiness, laughter,
+    wonderful memories, and moments that make you smile.
+</p>
+
+
+<p>
+    As you continue your journey, we wish you
+    continued growth, success, confidence,
+    and exciting opportunities in the year ahead.
+</p>
+
+
+<!-- =========================
+     BIRTHDAY MESSAGE
+========================= -->
+
+<div class="birthday-box">
+
+    <div class="icon">
+        🎉
+    </div>
+
+    <h3>
+        Wishing You An Amazing Year Ahead
+    </h3>
+
+    <p>
+        May this new year of your life bring you
+        new experiences, meaningful achievements,
+        new opportunities, and countless reasons
+        to be proud of yourself.
+    </p>
+
+</div>
+
+
+<!-- =========================
+     WISHES
+========================= -->
+
+<div class="wishes-box">
+
+    <h3>
+        Our Wishes For You
+    </h3>
+
+    <table>
+
+        <tr>
+            <td>😊</td>
+            <td>
+                New opportunities to learn and grow
+            </td>
+        </tr>
+
+        <tr>
+            <td>😊</td>
+            <td>
+                Success in your career and future goals
+            </td>
+        </tr>
+
+        <tr>
+            <td>😊</td>
+            <td>
+                Confidence to take on new challenges
+            </td>
+        </tr>
+
+        <tr>
+            <td>😊</td>
+            <td>
+                Achievement of your dreams and ambitions
+            </td>
+        </tr>
+
+        <tr>
+            <td>😊</td>
+            <td>
+                Happiness, health and memorable moments
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+
+<!-- =========================
+     QUOTE
+========================= -->
+
+<div class="quote">
+
+    <p>
+        "Keep learning. Keep growing. Keep believing in yourself."
+    </p>
+
+</div>
+
+
+<p>
+    We are happy to have you as a part of the
+    <strong>V-Ex Tech Solutions family</strong>.
+</p>
+
+
+<p>
+    May the year ahead open new doors for you,
+    help you achieve your goals, and bring
+    many wonderful moments into your life.
+</p>
+
+
+<p>
+    Once again,
+    <strong>Happy Birthday, {{name}}!</strong>
+</p>
+
+
+<!-- =========================
+     BUTTON
+========================= -->
+
+<div class="button-container">
+
+    <a
+        href="https://v-extechsolution.in"
+        class="btn"
+    >
+        Visit Our Website
+    </a>
+
+</div>
+
+
+<!-- =========================
+     REGARDS
+========================= -->
+
+<div class="regards-section">
+
+    <p>
+        Warmest Wishes,
+    </p>
+
+    <p class="team-name">
+        Team V-Ex Tech Solutions
+    </p>
+
+</div>
+
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<div class="footer">
+
+    <p class="footer-title">
+        V-Ex Tech Solutions
+    </p>
+
+    <p>
+        Email: hrteam@v-extechsolution.in
+    </p>
+
+    <p>
+        Phone: +91 96647 68292
+    </p>
+
+    <p>
+        Vadodara, Gujarat, India
+    </p>
+
+
+    <div class="social-links">
+
+        <a
+            href="https://www.linkedin.com/company/v-ex-tech-software-company-in-vadodara/mycompany/"
+        >
+            LinkedIn
+        </a>
+
+        <a
+            href="https://www.instagram.com/v_extech/"
+        >
+            Instagram
+        </a>
+
+        <a
+            href="https://www.youtube.com/@Veer_Agraval"
+        >
+            YouTube
+        </a>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+
+</html>
