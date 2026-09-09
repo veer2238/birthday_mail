@@ -99,7 +99,7 @@ const fileSchema = new mongoose.Schema({
 // Make sure this uses the SAME MongoDB collection
 // that contains your students.
 
- const File = mongoose.model('File', fileSchema);
+ const Student = mongoose.model('File', fileSchema);
 
 
 // -------------------------
